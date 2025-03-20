@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex</title>
+    <link rel="shortcut icon" 
+          href="pikachu-transparent-32590.png" 
+          type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <input type="text" id="pokeName" placeholder="Enter Pokemon name">
+    <button onclick="fetchpoke()" id="search">🔍</button> 
+    <div class="back"></div>
+    <div class="container">
+       <h4>Pokedex</h4>
+        <div id="sprite">
+            <img src="" id="Pokemon" alt="PoKe" style="display: none; ">
+        </div>
+        <hr id="line" width="150px" color="black">
+       <span id="name"></span>
+       <div id="Namet" style="display: none;">
+       <label for="Type" >Type:</label>
+    <span id="type"></span>
+
+    </div>
+</div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
