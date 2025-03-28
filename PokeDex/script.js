@@ -5,7 +5,9 @@ async function fetchpoke() {
       `https://pokeapi.co/api/v2/pokemon/${pokeName}`
     );
     if (!response.ok) {
+      alert("Pokemon from different region.Haven't been explore yet");
       throw new Error("Could not fetch the pokemon");
+      
     }
     const data = await response.json();
     const pokeSprite = data.sprites.front_default;
